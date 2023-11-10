@@ -1,0 +1,11 @@
+.bg-container{
+    background-color: aliceblue;
+    background-image: url("https://watermark.lovepik.com/photo/50066/1745.jpg_wh1200.jpg");
+    
+    padding: 20px;
+    background-size: cover;
+    
+}
+.pding{
+    padding-bottom: 15px;
+}

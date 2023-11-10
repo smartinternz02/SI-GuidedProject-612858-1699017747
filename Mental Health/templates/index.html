@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/styles.css') }}">
+</head>
+<body>
+    <form action="/" method="post">
+        <div class="bg-container " >
+            <h1 style="color:white" class="pding">How Are you feeling today :)?</h1>
+            <div class="pding">
+                <label style="color:white">Age</label>
+                <input type="text" id="age" name="age">
+
+            </div>
+            <div class="pding">
+                <label style="color:white" for="gender">Gender</label>
+                <select id="gender" name="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+                
+            </div>
+            <div class="pding country-selector">
+                <label for="countries" style="color:white">Select a Country:</label>
+                <select id="countries" name="countries">
+                    <option value="United States">United States</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Ireland">Ireland</option>
+                    <option value="Netherlands">Netherlands</option>
+                    <option value="Australia">Australia</option>
+                    <option value="France">France</option>
+                    <option value="New Zealand">New Zealand</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Poland">Poland</option>
+                    <option value="Sweden">Sweden</option>
+                    <option value="India">India</option>
+                    <option value="Switzerland">Switzerland</option>
+                    <option value="Belgium">Belgium</option>
+                    <option value="South Africa">South Africa</option>
+                    <option value="Israel">Israel</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Bulgaria">Bulgaria</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="Denmark">Denmark</option>
+                    <option value="Greece">Greece</option>
+                    <option value="Finland">Finland</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Austria">Austria</option>
+                    <option value="Croatia">Croatia</option>
+                    <option value="Russia">Russia</option>
+                    <option value="China">China</option>
+                    <option value="Moldova">Moldova</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Czech Republic">Czech Republic</option>
+                    <option value="Norway">Norway</option>
+                    <option value="Romania">Romania</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Hungary">Hungary</option>
+                    <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Latvia">Latvia</option>
+                    <option value="Costa Rica">Costa Rica</option>
+                    <option value="Philippines">Philippines</option>
+                </select>
+            </div>
+            <div class="state-selector pding">
+                <label for="states" style="color:white">Select a State:</label>
+                <select id="states" name="states">
+                    <option value="CA">California</option>
+                    <option value="WA">Washington</option>
+                    <option value="NY">New York</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="IL">Illinois</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OR">Oregon</option>
+                    <option value="IN">Indiana</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="FL">Florida</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="GA">Georgia</option>
+                    <option value="UT">Utah</option>
+                    <option value="MO">Missouri</option>
+                    <option value="CO">Colorado</option>
+                    <option value="MD">Maryland</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="IA">Iowa</option>
+                    <option value="DC">District of Columbia</option>
+                    <option value="VT">Vermont</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="KS">Kansas</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="WY">Wyoming</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                </select>
+            </div>
+            <div class="self-employe-row pding">
+                <label style="color:white" for="self-employed">Are You Self-employed?</label>
+                <select id="self-employed" name="self-employed">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+                
+            </div>
+            <div class="family-history-selector pding">
+                <label for="family-history" style="color:white">Select Company Size:</label>
+                <select id="family-history" name="family-history">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>              
+                </select>
+            </div>
+            <div class="Work-interfere-selector pding">
+                <label for="Work-interfere" style="color:white">Select Company Size:</label>
+                <select id="Work-interfere" name="Work-interfere">
+                    <option value="Never">Never</option>              
+                    <option value="Sometimes">Sometimes</option>
+                    <option value="Rarely">Rarely</option>
+                    <option value="Often">Often</option>
+                </select>
+            </div>       
+            <div class="no-of-employees-selector pding">
+                <label for="no-of-employees" style="color:white">Select Company Size:</label>
+                <select id="no-of-employees" name="no-of-employees">
+                    <option value="1-5">1-5</option>
+                    <option value="6-25">6-25</option>
+                    <option value="26-100">26-100</option>
+                    <option value="100-500">100-500</option>
+                    <option value="500-1000">500-1000</option>
+                    <option value="More than 1000">More than 1000</option>              
+                </select>
+            </div>
+            <div class="remote_work-selector pding">
+                <label for="remote_work" style="color:white">Are you doing any Remote work?:</label>
+                <select id="remote_work" name="remote_work">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>              
+                </select>
+            </div>
+            <div class="tech-company-selector pding">
+                <label for="tech-company" style="color:white">Are you working in tech company?:</label>
+                <select id="tech-company" name="tech-company">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>              
+                </select>
+            </div>
+            <div class="benefits-selector pding">
+                <label for="benefits" style="color:white">Are you having benefits in company?:</label>
+                <select id="benefits" name="benefits">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>              
+                    <option value="Don't know">Don't know</option>              
+                </select>
+            </div>
+            <div class="care_options-selector pding">
+                <label for="care_options" style="color:white">Do you know the options for mental health care your employer provides?:</label>
+                <select id="care_options" name="care_options">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>              
+                    <option value="Not sure">Not sure</option>              
+                </select>
+            </div>
+            <div class="wellness_program-selector pding">
+                <label for="wellness_program" style="color:white">Has your employer ever discussed mental health as part of an employee wellness program?:</label>
+                <select id="wellness_program" name="wellness_program">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>              
+                    <option value="Don't know">Don't know</option>              
+                </select>
+            </div>
+            <div class="seek_help-selector pding">
+                <label for="seek_help" style="color:white">Does your employer provide resources to learn more about mental health issues and how to seek help?:</label>
+                <select id="seek_help" name="seek_help">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>              
+                    <option value="Don't know">Don't know</option>              
+                </select>
+            </div>
+            <div class="anonymity-selector pding">
+                <label for="anonymity" style="color:white">Is your anonymity protected if you choose to take advantage of mental health or substance abuse treatment:</label>
+                <select id="anonymity" name="anonymity">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>              
+                    <option value="Don't know">Don't know</option>              
+                </select>
+            </div>
+            <div class="leave-selector pding">
+                <label for="leave" style="color:white">How easy is it for you to take medical leave for a mental health condition?:</label>
+                <select id="leave" name="leave">
+                <option value="Don't know">Don't know</option>
+                <option value="Somewhat easy">Somewhat easy</option>
+                <option value="Very easy">Very easy</option>
+                <option value="Somewhat difficult">Somewhat difficult</option>
+                <option value="Very difficult">Very difficult</option>             
+                </select>
+            </div>
+            <!-- Mental Health Consequence Selector -->
+            <div class="mental-health-consequence-selector pding">
+            <label for="mental-health-consequence" style="color:white">Do you think that discussing a mental health issue with your employer would have negative consequences?:</label>
+            <select id="mental-health-consequence" name="mental-health-consequence">
+                <option value="Maybe">Maybe</option>
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+            </select>
+            </div>
+
+            <!-- Phys Health Consequence Selector -->
+            <div class="phys-health-consequence-selector pding">
+                <label for="phys-health-consequence" style="color:white">Do you think that discussing a physical health issue with your employer would have negative consequences?:</label>
+                <select id="phys-health-consequence" name="phys-health-consequence">
+                    <option value="Maybe">Maybe</option>
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                </select>
+            </div>
+
+            <!-- Coworkers Selector -->
+            <div class="coworkers-selector pding">
+                <label for="coworkers" style="color:white">Would you be willing to discuss a mental health issue with your coworkers?:</label>
+                <select id="coworkers" name="coworkers">
+                    <option value="Some of them">Some of them</option>
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                </select>
+            </div>
+
+            <!-- Supervisor Selector -->
+            <div class="supervisor-selector pding">
+                <label for="supervisor" style="color:white">Would you be willing to discuss a mental health issue with your direct supervisor(s)?:</label>
+                <select id="supervisor" name="supervisor">
+                    <option value="Some of them">Some of them</option>
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                </select>
+            </div>
+
+            <!-- Mental Health Interview Selector -->
+            <div class="mental-health-interview-selector pding">
+                <label for="mental-health-interview" style="color:white">Would you bring up a mental health issue with a potential employer in an interview?:</label>
+                <select id="mental-health-interview" name="mental-health-interview">
+                    <option value="Maybe">Maybe</option>
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                </select>
+            </div>
+
+            <!-- Phys Health Interview Selector -->
+            <div class="phys-health-interview-selector pding">
+                <label for="phys-health-interview" style="color:white">Would you bring up a physical health issue with a potential employer in an interview?:</label>
+                <select id="phys-health-interview" name="phys-health-interview">
+                    <option value="Maybe">Maybe</option>
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                </select>
+            </div>
+
+            <!-- Mental vs Physical Selector -->
+            <div class="mental-vs-physical-selector pding">
+                <label for="mental-vs-physical" style="color:white">Do you feel that your employer takes mental health as seriously as physical health?:</label>
+                <select id="mental-vs-physical" name="mental-vs-physical">
+                    <option value="Don't know">Don't know</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+
+            <!-- Obs Consequence Selector -->
+            <div class="obs-consequence-selector pding">
+                <label for="obs-consequence" style="color:white">Have you heard of or observed negative consequences for coworkers with mental health conditions in your workplace?:</label>
+                <select id="obs-consequence" name="obs-consequence">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <div>
+                <button>Submit</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
